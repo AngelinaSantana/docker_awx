@@ -15,10 +15,10 @@ services:
       - "3306:3306"
     # setting some env vars to create the DB
     environment:
-      MYSQL_RANDOM_ROOT_PASSWORD: "1192948"
+      MYSQL_RANDOM_ROOT_PASSWORD: "2162012"
       MYSQL_DATABASE: "paralelo_db"
-      MYSQL_USER: "joseph"
-      MYSQL_PASSWORD: "1192948"
+      MYSQL_USER: "angelina"
+      MYSQL_PASSWORD: "2162012"
       # O si desea utilizar "root" como usuario, solo estas dos líneas
       # MYSQL_ROOT_PASSWORD: ${DATABASE_PASSWORD}
       # MYSQL_DATABASE: ${DATABASE_NAME}
