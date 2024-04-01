@@ -16,7 +16,7 @@ type User struct {
 }
 
 func createUser(name string) error {
-	db, err := sql.Open("mysql", "joseph:1192948@tcp(db:3306)/paralelo_db")
+	db, err := sql.Open("mysql", "angelina:2162012@tcp(db:3306)/paralelo_db")
 	if err != nil {
 		return err
 	}
@@ -31,7 +31,7 @@ func createUser(name string) error {
 }
 
 func updateUser(id int, name string) error {
-	db, err := sql.Open("mysql", "joseph:1192948@tcp(db:3306)/paralelo_db")
+	db, err := sql.Open("mysql", "angelina:2162012@tcp(db:3306)/paralelo_db")
 	if err != nil {
 		return err
 	}
@@ -46,7 +46,7 @@ func updateUser(id int, name string) error {
 }
 
 func deleteUser(id int) error {
-	db, err := sql.Open("mysql", "joseph:1192948@tcp(db:3306)/paralelo_db")
+	db, err := sql.Open("mysql", "angelina:2162012@tcp(db:3306)/paralelo_db")
 	if err != nil {
 		return err
 	}
@@ -67,7 +67,7 @@ func deleteUser(id int) error {
 }
 
 func getUsers() []*User {
-	db, err := sql.Open("mysql", "joseph:1192948@tcp(db:3306)/paralelo_db")
+	db, err := sql.Open("mysql", "angelina:2162012@tcp(db:3306)/paralelo_db")
 	if err != nil {
 		log.Print(err.Error())
 	}
@@ -97,7 +97,7 @@ func homePage(w http.ResponseWriter, r *http.Request) {
 		username := r.FormValue("username")
 		password := r.FormValue("password")
 
-		if username == "joseph" && password == "1192948" {
+		if username == "angelina" && password == "2162012" {
 			http.Redirect(w, r, "/users", http.StatusFound)
 			return
 		} else {
